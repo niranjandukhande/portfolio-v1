@@ -25,16 +25,38 @@
     background-color: white !important;
     font-size: 0.8rem !important;
     height: 25px !important;
+    transition: all 0.25s ease;
+    transform: scale(1);
+    border-radius: 16px;
 
     span {
         font-family: 'Courier Prime', monospace;
         color: rgb(39, 40, 34);
+        transition: color 0.25s ease;
     }
 
     svg {
         height: 15px !important;
+        transition: color 0.25s ease;
     }
 }
+
+.chip:hover {
+    background-color: #dceefb !important;  /* Soft blue (tailwind blue-100) */
+    color: rgb(33, 37, 41) !important;
+    transform: scale(1.03);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+
+    span {
+        color: rgb(33, 37, 41) !important;
+    }
+
+    svg {
+        color: rgb(33, 37, 41) !important;
+    }
+}
+
 
 .flex-chips {
     line-height: 2;

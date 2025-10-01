@@ -127,11 +127,10 @@ function Navigation({ parentToChild, modeChange }: NavigationProps) {
           >
             <MenuIcon />
           </IconButton>
-          {mode === "dark" ? (
-            <LightModeIcon onClick={() => modeChange()} />
-          ) : (
-            <DarkModeIcon onClick={() => modeChange()} />
-          )}
+          <span style={{ color: mode === "light" ? "black" : "white" }}>
+            神
+          </span>
+
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
               <Button
@@ -156,6 +155,10 @@ function Navigation({ parentToChild, modeChange }: NavigationProps) {
               Resume
               <FontAwesomeIcon icon={faArrowAltCircleRight} size="1x" />
             </Button>
+            <Button key="modeSwitch" sx={{ color: "#fff" }} onClick={modeChange}>
+              {mode === "dark" ? <LightModeIcon /> : <DarkModeIcon />}
+            </Button>
+
           </Box>
         </Toolbar>
       </AppBar>
