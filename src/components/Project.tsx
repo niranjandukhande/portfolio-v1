@@ -1,5 +1,7 @@
 import gupshup from "../assets/images/Gupshup.png";
 import enhancedDimaag from "../assets/images/enhancedDimaag.png";
+import blockEstate from "../assets/images/BlockEstate.png";
+import weatherNow from "../assets/images/WeatherNow.png";
 
 import "../assets/styles/Project.scss";
 
@@ -62,7 +64,7 @@ function Project() {
             rel="noreferrer"
           >
             <img
-              src={enhancedDimaag}
+              src={blockEstate}
               className="zoom"
               alt="thumbnail"
               width="100%"
@@ -79,6 +81,32 @@ function Project() {
             Developed a blockchain-based real estate system as a final year
             project, automating ownership verification and securing transactions
             by tokenizing properties as NFTs.
+          </p>
+        </div>
+        <div className="project">
+          <a
+            href="https://github.com/niranjandukhande/WeatherNow"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={weatherNow}
+              className="zoom"
+              alt="thumbnail"
+              width="100%"
+            />
+          </a>
+          <a
+            href="https://github.com/niranjandukhande/WeatherNow"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h2>WeatherNow</h2>
+          </a>
+          <p>
+            Built a real-time weather app with interactive maps using
+            OpenWeather API and Leaflet to explore geolocation-based data
+            fetching and modern React patterns.
           </p>
         </div>
       </div>
