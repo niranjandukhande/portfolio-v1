@@ -85,7 +85,7 @@ function Project() {
         </div>
         <div className="project">
           <a
-            href="https://github.com/niranjandukhande/WeatherNow"
+            href="https://weathernow.niranjandukhande.in"
             target="_blank"
             rel="noreferrer"
           >
@@ -97,7 +97,7 @@ function Project() {
             />
           </a>
           <a
-            href="https://github.com/niranjandukhande/WeatherNow"
+            href="https://weathernow.niranjandukhande.in"
             target="_blank"
             rel="noreferrer"
           >
